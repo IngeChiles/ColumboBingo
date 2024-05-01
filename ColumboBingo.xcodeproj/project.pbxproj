@@ -11,6 +11,9 @@
 		837C30FD2BE06FB500F875A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C30FC2BE06FB500F875A4 /* ContentView.swift */; };
 		837C30FF2BE06FBD00F875A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C30FE2BE06FBD00F875A4 /* Assets.xcassets */; };
 		837C31022BE06FBD00F875A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C31012BE06FBD00F875A4 /* Preview Assets.xcassets */; };
+		837C31092BE0712700F875A4 /* Blueprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C31082BE0712700F875A4 /* Blueprint.swift */; };
+		837C310B2BE18DCF00F875A4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C310A2BE18DCF00F875A4 /* ViewModel.swift */; };
+		837C310D2BE1D64600F875A4 /* GridButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C310C2BE1D64600F875A4 /* GridButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		837C30FC2BE06FB500F875A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		837C30FE2BE06FBD00F875A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837C31012BE06FBD00F875A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		837C31082BE0712700F875A4 /* Blueprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blueprint.swift; sourceTree = "<group>"; };
+		837C310A2BE18DCF00F875A4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		837C310C2BE1D64600F875A4 /* GridButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */,
 				837C30FC2BE06FB500F875A4 /* ContentView.swift */,
+				837C310C2BE1D64600F875A4 /* GridButtonView.swift */,
+				837C310A2BE18DCF00F875A4 /* ViewModel.swift */,
+				837C31082BE0712700F875A4 /* Blueprint.swift */,
 				837C30FE2BE06FBD00F875A4 /* Assets.xcassets */,
 				837C31002BE06FBD00F875A4 /* Preview Content */,
 			);
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				837C30FD2BE06FB500F875A4 /* ContentView.swift in Sources */,
+				837C310D2BE1D64600F875A4 /* GridButtonView.swift in Sources */,
+				837C31092BE0712700F875A4 /* Blueprint.swift in Sources */,
+				837C310B2BE18DCF00F875A4 /* ViewModel.swift in Sources */,
 				837C30FB2BE06FB500F875A4 /* ColumboBingoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
