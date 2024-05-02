@@ -14,7 +14,18 @@
 		837C31092BE0712700F875A4 /* Blueprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C31082BE0712700F875A4 /* Blueprint.swift */; };
 		837C310B2BE18DCF00F875A4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C310A2BE18DCF00F875A4 /* ViewModel.swift */; };
 		837C310D2BE1D64600F875A4 /* GridButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C310C2BE1D64600F875A4 /* GridButtonView.swift */; };
+		83C2034D2BE43BAE00A0C99C /* ColumboBingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2034C2BE43BAE00A0C99C /* ColumboBingoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83C2034E2BE43BAE00A0C99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837C30EF2BE06FB500F875A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837C30F62BE06FB500F875A4;
+			remoteInfo = ColumboBingo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		837C30F72BE06FB500F875A4 /* ColumboBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColumboBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +36,21 @@
 		837C31082BE0712700F875A4 /* Blueprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blueprint.swift; sourceTree = "<group>"; };
 		837C310A2BE18DCF00F875A4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		837C310C2BE1D64600F875A4 /* GridButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridButtonView.swift; sourceTree = "<group>"; };
+		837C310E2BE2E01600F875A4 /* ColumboBingo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ColumboBingo.xctestplan; sourceTree = "<group>"; };
+		83C203452BE2F4FB00A0C99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83C2034A2BE43BAD00A0C99C /* ColumboBingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColumboBingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C2034C2BE43BAE00A0C99C /* ColumboBingoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumboBingoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		837C30F42BE06FB500F875A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C203472BE43BAD00A0C99C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +63,9 @@
 		837C30EE2BE06FB500F875A4 = {
 			isa = PBXGroup;
 			children = (
+				837C310E2BE2E01600F875A4 /* ColumboBingo.xctestplan */,
 				837C30F92BE06FB500F875A4 /* ColumboBingo */,
+				83C2034B2BE43BAD00A0C99C /* ColumboBingoTests */,
 				837C30F82BE06FB500F875A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				837C30F72BE06FB500F875A4 /* ColumboBingo.app */,
+				83C2034A2BE43BAD00A0C99C /* ColumboBingoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +82,7 @@
 		837C30F92BE06FB500F875A4 /* ColumboBingo */ = {
 			isa = PBXGroup;
 			children = (
+				83C203452BE2F4FB00A0C99C /* Info.plist */,
 				837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */,
 				837C30FC2BE06FB500F875A4 /* ContentView.swift */,
 				837C310C2BE1D64600F875A4 /* GridButtonView.swift */,
@@ -74,6 +100,14 @@
 				837C31012BE06FBD00F875A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83C2034B2BE43BAD00A0C99C /* ColumboBingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				83C2034C2BE43BAE00A0C99C /* ColumboBingoTests.swift */,
+			);
+			path = ColumboBingoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +130,24 @@
 			productReference = 837C30F72BE06FB500F875A4 /* ColumboBingo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		83C203492BE43BAD00A0C99C /* ColumboBingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C203522BE43BAE00A0C99C /* Build configuration list for PBXNativeTarget "ColumboBingoTests" */;
+			buildPhases = (
+				83C203462BE43BAD00A0C99C /* Sources */,
+				83C203472BE43BAD00A0C99C /* Frameworks */,
+				83C203482BE43BAD00A0C99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83C2034F2BE43BAE00A0C99C /* PBXTargetDependency */,
+			);
+			name = ColumboBingoTests;
+			productName = ColumboBingoTests;
+			productReference = 83C2034A2BE43BAD00A0C99C /* ColumboBingoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -108,6 +160,10 @@
 				TargetAttributes = {
 					837C30F62BE06FB500F875A4 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					83C203492BE43BAD00A0C99C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 837C30F62BE06FB500F875A4;
 					};
 				};
 			};
@@ -125,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				837C30F62BE06FB500F875A4 /* ColumboBingo */,
+				83C203492BE43BAD00A0C99C /* ColumboBingoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +193,13 @@
 			files = (
 				837C31022BE06FBD00F875A4 /* Preview Assets.xcassets in Resources */,
 				837C30FF2BE06FBD00F875A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C203482BE43BAD00A0C99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83C203462BE43BAD00A0C99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C2034D2BE43BAE00A0C99C /* ColumboBingoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83C2034F2BE43BAE00A0C99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837C30F62BE06FB500F875A4 /* ColumboBingo */;
+			targetProxy = 83C2034E2BE43BAE00A0C99C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		837C31032BE06FBD00F875A4 /* Debug */ = {
@@ -287,9 +367,9 @@
 				DEVELOPMENT_TEAM = F3CD9UZ9BR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColumboBingo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,9 +396,9 @@
 				DEVELOPMENT_TEAM = F3CD9UZ9BR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColumboBingo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,6 +411,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83C203502BE43BAE00A0C99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3CD9UZ9BR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Chiles.Inge.ColumboBingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColumboBingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColumboBingo";
+			};
+			name = Debug;
+		};
+		83C203512BE43BAE00A0C99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3CD9UZ9BR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Chiles.Inge.ColumboBingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColumboBingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColumboBingo";
 			};
 			name = Release;
 		};
@@ -351,6 +467,15 @@
 			buildConfigurations = (
 				837C31062BE06FBD00F875A4 /* Debug */,
 				837C31072BE06FBD00F875A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C203522BE43BAE00A0C99C /* Build configuration list for PBXNativeTarget "ColumboBingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C203502BE43BAE00A0C99C /* Debug */,
+				83C203512BE43BAE00A0C99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

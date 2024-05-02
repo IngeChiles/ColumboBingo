@@ -5,9 +5,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var bm = BingoModel()
+    @StateObject var bm = BingoViewModel()
     
-    let columns = Array(repeating: GridItem(.flexible()), count: 3)
+    let columns = Array(repeating: GridItem(.flexible()), count: 4)
     
     var body: some View {
         NavigationStack {
@@ -15,13 +15,14 @@ struct ContentView: View {
                 VStack {
                     Spacer()
                     LazyVGrid(columns: columns, content: {
-                        ForEach(0..<Int(bm.tropes.count)) { index in
+                        ForEach(0..<bm.tropes.count, id: \.self) { index in
                             Button(action: {
                                 bm.buttonTap(index: index)
                             }, label: {
-                                Text(bm.tropes[index])
-                                    .padding()
-                                    .frame(width: 110, height: 110)
+                                Text(bm.tropes[index]).minimumScaleFactor(0.5)
+                                    .padding(.vertical)
+                                    .padding(.horizontal, 5)
+                                    .frame(width: 80, height: 80)
                                     .background(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(.black)
@@ -37,16 +38,16 @@ struct ContentView: View {
                 }
                 .alert(isPresented: $bm.itsBingo, content: {
                     Alert(
-                        title: Text("You Got All The Tropes"),
-                        message: Text(""),
-                        dismissButton: .default(Text("Reset Game"), action: bm.resetBoard)
+                        title: Text("BINGO!"),
+                        message:
+                            Text(bm.alertMessages.randomElement() ?? "Well Done!"),
+                        dismissButton: .default(Text("Play Again"), action: bm.resetBoard)
                     )
                 })
-                .navigationTitle("Columbo Bingo")
+                .navigationTitle("Columbo Bingo").preferredColorScheme(.dark)
             }
-            //            .background(
-            //                LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom)
-            //            )
+            .background(LinearGradient(gradient: Gradient(colors: [.black, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            )
         }
     }
 }
@@ -54,33 +55,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-/*
- struct ContentView: View {
- var bm = BingoModel()
- let columns = [
- GridItem(.adaptive(minimum: 150))
- ]
- let tropes = ["Is Sleepy","Murderer Has Butler", "Raincoat Commented On", "70's Rapid Camera Zoom", "Mentions Wife", "'One More Thing' X 2", "*Smacks Forehead*", "Cigar Commented On", "Brags About Car"]
- 
- var body: some View {
- VStack {
- LazyVGrid(columns: columns, content: {
- ForEach(0..<8) { trope in
- Button(action: {
- bm.buttonTap(i: trope)
- }, label: {
- Text(bm.buttonLabel(i:trope))
- .padding(.vertical)
- .frame(maxWidth: .infinity)
- })
- }
- })
- }
- .padding()
- }
- }
- 
- // this only displays 8 X's
- */

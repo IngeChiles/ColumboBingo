@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "F7B432EB-3170-4466-BBF1-BA886C96D4F2",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ColumboBingo.xcodeproj",
+      "identifier" : "837C30F62BE06FB500F875A4",
+      "name" : "ColumboBingo"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
