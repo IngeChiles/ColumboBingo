@@ -6,9 +6,9 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var bm = BingoViewModel()
-    
+
     let columns = Array(repeating: GridItem(.flexible()), count: 4)
-    
+
     var body: some View {
         NavigationStack {
             ScrollView {

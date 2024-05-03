@@ -17,7 +17,13 @@
     }
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:ColumboBingo.xcodeproj",
+        "identifier" : "83C203492BE43BAD00A0C99C",
+        "name" : "ColumboBingoTests"
+      }
+    }
   ],
   "version" : 1
 }
