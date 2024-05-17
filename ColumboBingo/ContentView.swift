@@ -6,9 +6,11 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var bm = BingoViewModel()
-
+    
     let columns = Array(repeating: GridItem(.flexible()), count: 4)
-
+    
+    @State private var showingInfoSheet = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -21,7 +23,7 @@ struct ContentView: View {
                             }, label: {
                                 Text(bm.tropes[index]).minimumScaleFactor(0.5)
                                     .padding(.vertical)
-                                    .padding(.horizontal, 5)
+                                    .padding(.horizontal, 8)
                                     .frame(width: 80, height: 80)
                                     .background(
                                         RoundedRectangle(cornerRadius: 10)
@@ -44,9 +46,31 @@ struct ContentView: View {
                         dismissButton: .default(Text("Play Again"), action: bm.resetBoard)
                     )
                 })
-                .navigationTitle("Columbo Bingo").preferredColorScheme(.dark)
+                .navigationTitle("Columbo Bingo").preferredColorScheme(.light)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            showingInfoSheet.toggle()
+                        }) {
+                            Image(systemName: "info.circle")
+                                .font(.title2)
+                        }
+                    }
+                }
+                .sheet(isPresented: $showingInfoSheet) {
+                    InfoSheetView()
+                }
+                
             }
-            .background(LinearGradient(gradient: Gradient(colors: [.black, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            .background(
+                LinearGradient(
+                    gradient: Gradient(colors: [
+                        Color("ColumboYellow"),
+                        Color("BackgroundCream")
+                    ]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
             )
         }
     }
