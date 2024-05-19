@@ -18,22 +18,7 @@ struct ContentView: View {
                     Spacer()
                     LazyVGrid(columns: columns, content: {
                         ForEach(0..<bm.tropes.count, id: \.self) { index in
-                            Button(action: {
-                                bm.buttonTap(index: index)
-                            }, label: {
-                                Text(bm.tropes[index]).minimumScaleFactor(0.5)
-                                    .padding(.vertical)
-                                    .padding(.horizontal, 8)
-                                    .frame(width: 80, height: 80)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(.black)
-                                            .fill(bm.tappedIndices.contains(index) ? .yellow : .white
-                                                 )
-                                    )
-                                    .padding(.vertical, 5)
-                            })
-                        }
+                            tropeButton(index: index)                        }
                     })
                     .padding()
                     Spacer()
@@ -49,9 +34,9 @@ struct ContentView: View {
                 .navigationTitle("Columbo Bingo").preferredColorScheme(.light)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: {
+                        Button {
                             showingInfoSheet.toggle()
-                        }) {
+                        } label: {
                             Image(systemName: "info.circle")
                                 .font(.title2)
                         }
@@ -73,6 +58,21 @@ struct ContentView: View {
                 )
             )
         }
+    }
+    private func tropeButton(index: Int) -> some View {
+        Button(action: {
+            bm.buttonTap(index: index)
+        }, label: {
+            RoundedRectangle(cornerRadius: 10)
+                .aspectRatio(contentMode: .fill)
+                .foregroundStyle(bm.tappedIndices.contains(index) ? .yellow : .white)
+                .overlay(
+                    Text(bm.tropes[index])
+                        .minimumScaleFactor(0.5)
+                        .padding(10)
+                )
+        })
+        
     }
 }
 

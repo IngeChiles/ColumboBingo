@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832E98BD2BFAC331006117B7 /* TropeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E98BC2BFAC331006117B7 /* TropeButtonView.swift */; };
 		837C30FB2BE06FB500F875A4 /* ColumboBingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */; };
 		837C30FD2BE06FB500F875A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C30FC2BE06FB500F875A4 /* ContentView.swift */; };
 		837C30FF2BE06FBD00F875A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C30FE2BE06FBD00F875A4 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		832E98BC2BFAC331006117B7 /* TropeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TropeButtonView.swift; sourceTree = "<group>"; };
 		837C30F72BE06FB500F875A4 /* ColumboBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColumboBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumboBingoApp.swift; sourceTree = "<group>"; };
 		837C30FC2BE06FB500F875A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				83C203452BE2F4FB00A0C99C /* Info.plist */,
 				837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */,
 				837C30FC2BE06FB500F875A4 /* ContentView.swift */,
+				832E98BC2BFAC331006117B7 /* TropeButtonView.swift */,
 				838C98C12BF6D581007EF5D5 /* InfoSheetView.swift */,
 				837C310A2BE18DCF00F875A4 /* ViewModel.swift */,
 				837C31082BE0712700F875A4 /* Blueprint.swift */,
@@ -227,7 +230,6 @@
 		};
 		247FE4CC2BE5840D00FD8CE0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 8;
 			files = (
 			);
@@ -251,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				837C30FD2BE06FB500F875A4 /* ContentView.swift in Sources */,
+				832E98BD2BFAC331006117B7 /* TropeButtonView.swift in Sources */,
 				838C98C22BF6D581007EF5D5 /* InfoSheetView.swift in Sources */,
 				837C31092BE0712700F875A4 /* Blueprint.swift in Sources */,
 				837C310B2BE18DCF00F875A4 /* ViewModel.swift in Sources */,
@@ -411,6 +414,7 @@
 				INFOPLIST_FILE = ColumboBingo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,6 +445,7 @@
 				INFOPLIST_FILE = ColumboBingo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -18,12 +18,12 @@ class BingoViewModel: ObservableObject {
 
     let tropes = [
         "Is Sleepy",
-        "Murderer Has Butler",
-        "Raincoat Mentioned",
-        "*Camera Zooms*",
-        "Mentions Wife",
-        "'One More Thing' X 2",
-        "Smokes Cigar X 2",
+        "Snobby Butler",
+        "Talks About Raincoat",
+        "70s Camera Zoom",
+        "Talks About Wife",
+        "One More Thing",
+        "Lit Cigar",
         "Brags About Car",
         "Quiet Smile",
         "Dog",
