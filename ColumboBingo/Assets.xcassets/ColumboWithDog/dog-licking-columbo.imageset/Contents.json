@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dog-licking-columbo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

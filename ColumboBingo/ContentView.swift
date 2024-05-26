@@ -5,35 +5,44 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var bm = BingoViewModel()
-    
+    @StateObject var bvm = BingoViewModel()
+
     let columns = Array(repeating: GridItem(.flexible()), count: 4)
-    
+
     @State private var showingInfoSheet = false
-    
+
     var body: some View {
         NavigationStack {
-            ScrollView {
                 VStack {
                     Spacer()
+                    Image(bvm.currentColumboPhoto)
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(10)
+                        .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.blue, lineWidth: 5)
+                            )
+                        .padding()
+
                     LazyVGrid(columns: columns, content: {
-                        ForEach(0..<bm.tropes.count, id: \.self) { index in
+                        ForEach(0..<bvm.tropes.count, id: \.self) { index in
                             tropeButton(index: index)                        }
                     })
                     .padding()
-                    Spacer()
                 }
-                .alert(isPresented: $bm.itsBingo, content: {
+                .alert(isPresented: $bvm.itsBingo, content: {
                     Alert(
                         title: Text("BINGO!"),
-                        message:
-                            Text(bm.alertMessages.randomElement() ?? "Well Done!"),
-                        dismissButton: .default(Text("Play Again"), action: bm.resetBoard)
+                        message: Text(bvm.alertMessages.randomElement() ?? "Well Done!"),
+                        dismissButton: .default(Text("Play Again"),
+                        action: bvm.resetBoard)
                     )
                 })
-                .navigationTitle("Columbo Bingo").preferredColorScheme(.light)
+                .navigationTitle("Columbo Bingo")
+                .preferredColorScheme(.light)
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
+                    ToolbarItem(placement: .topBarTrailing) {
                         Button {
                             showingInfoSheet.toggle()
                         } label: {
@@ -45,8 +54,6 @@ struct ContentView: View {
                 .sheet(isPresented: $showingInfoSheet) {
                     InfoSheetView()
                 }
-                
-            }
             .background(
                 LinearGradient(
                     gradient: Gradient(colors: [
@@ -61,18 +68,18 @@ struct ContentView: View {
     }
     private func tropeButton(index: Int) -> some View {
         Button(action: {
-            bm.buttonTap(index: index)
+            bvm.buttonTap(index: index)
         }, label: {
             RoundedRectangle(cornerRadius: 10)
                 .aspectRatio(contentMode: .fill)
-                .foregroundStyle(bm.tappedIndices.contains(index) ? .yellow : .white)
+                .foregroundStyle(bvm.tappedIndices.contains(index) ? .yellow : .white)
                 .overlay(
-                    Text(bm.tropes[index])
+                    Text(bvm.tropes[index])
                         .minimumScaleFactor(0.5)
                         .padding(10)
                 )
         })
-        
+
     }
 }
 

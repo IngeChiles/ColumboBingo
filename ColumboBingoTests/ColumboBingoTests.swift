@@ -29,7 +29,7 @@ final class ColumboBingoTests: XCTestCase {
         subject.buttonTap(index: 0)
         XCTAssertTrue(subject.tappedIndices.isEmpty)
     }
-    
+
     func testButtonTapCallsAlert() {
         // test that within buttonTap(), when containsWinningCombination() is called and the result is true,
         // bingoAlert() is called.
@@ -83,7 +83,6 @@ final class ColumboBingoTests: XCTestCase {
         XCTAssertFalse(nonWin)
     }
 
-
     // MARK: - Test checkCombination()
 
     func testCheckCombination() {
@@ -96,32 +95,38 @@ final class ColumboBingoTests: XCTestCase {
 
         XCTAssertEqual(didWin, comboChecked)
     }
-    
+
     // MARK: - Test bingoAlert()
-    
+
     func testBingoAlert() {
         // test that when bingoAlert is called, itsBingo = true.
-        
+
         subject.bingoAlert()
-        
+
         XCTAssertTrue(subject.itsBingo)
     }
-    
+
+    // MARK: - Test getPhoto()
+
+    func testGetPhoto() {
+        // test that when getPhoto is called, currentColumboPhoto = a random photo from the columboPhotoArray.
+    }
+
     // MARK: - Test resetBoard()
-    
+
     func testResetBoardRemoveAllTappedIndices() {
         // test that when resetBoard is called, tappedIndices.removeAll() is called and tappedIndices is an empty array.
-        
+
         subject.resetBoard()
-        
+
         XCTAssertTrue(subject.tappedIndices.isEmpty)
     }
-    
+
     func testResetBoardItsBingoFalse() {
         // test that when resetBoard is called, itsBingo = false.
-        
+
         subject.resetBoard()
-        
+
         XCTAssertFalse(subject.itsBingo)
     }
 }

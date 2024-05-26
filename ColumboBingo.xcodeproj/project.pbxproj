@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		832E98BD2BFAC331006117B7 /* TropeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E98BC2BFAC331006117B7 /* TropeButtonView.swift */; };
 		837C30FB2BE06FB500F875A4 /* ColumboBingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */; };
 		837C30FD2BE06FB500F875A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C30FC2BE06FB500F875A4 /* ContentView.swift */; };
 		837C30FF2BE06FBD00F875A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C30FE2BE06FBD00F875A4 /* Assets.xcassets */; };
 		837C31022BE06FBD00F875A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837C31012BE06FBD00F875A4 /* Preview Assets.xcassets */; };
-		837C31092BE0712700F875A4 /* Blueprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C31082BE0712700F875A4 /* Blueprint.swift */; };
-		837C310B2BE18DCF00F875A4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C310A2BE18DCF00F875A4 /* ViewModel.swift */; };
+		837C310B2BE18DCF00F875A4 /* BingoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C310A2BE18DCF00F875A4 /* BingoViewModel.swift */; };
 		838C98C22BF6D581007EF5D5 /* InfoSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C98C12BF6D581007EF5D5 /* InfoSheetView.swift */; };
 		83C2034D2BE43BAE00A0C99C /* ColumboBingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2034C2BE43BAE00A0C99C /* ColumboBingoTests.swift */; };
 /* End PBXBuildFile section */
@@ -29,14 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		832E98BC2BFAC331006117B7 /* TropeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TropeButtonView.swift; sourceTree = "<group>"; };
 		837C30F72BE06FB500F875A4 /* ColumboBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColumboBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumboBingoApp.swift; sourceTree = "<group>"; };
 		837C30FC2BE06FB500F875A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		837C30FE2BE06FBD00F875A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837C31012BE06FBD00F875A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		837C31082BE0712700F875A4 /* Blueprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blueprint.swift; sourceTree = "<group>"; };
-		837C310A2BE18DCF00F875A4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		837C310A2BE18DCF00F875A4 /* BingoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoViewModel.swift; sourceTree = "<group>"; };
 		837C310E2BE2E01600F875A4 /* ColumboBingo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ColumboBingo.xctestplan; sourceTree = "<group>"; };
 		838C98C12BF6D581007EF5D5 /* InfoSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSheetView.swift; sourceTree = "<group>"; };
 		83C203452BE2F4FB00A0C99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -86,10 +82,8 @@
 				83C203452BE2F4FB00A0C99C /* Info.plist */,
 				837C30FA2BE06FB500F875A4 /* ColumboBingoApp.swift */,
 				837C30FC2BE06FB500F875A4 /* ContentView.swift */,
-				832E98BC2BFAC331006117B7 /* TropeButtonView.swift */,
 				838C98C12BF6D581007EF5D5 /* InfoSheetView.swift */,
-				837C310A2BE18DCF00F875A4 /* ViewModel.swift */,
-				837C31082BE0712700F875A4 /* Blueprint.swift */,
+				837C310A2BE18DCF00F875A4 /* BingoViewModel.swift */,
 				837C30FE2BE06FBD00F875A4 /* Assets.xcassets */,
 				837C31002BE06FBD00F875A4 /* Preview Content */,
 			);
@@ -121,9 +115,9 @@
 			buildConfigurationList = 837C31052BE06FBD00F875A4 /* Build configuration list for PBXNativeTarget "ColumboBingo" */;
 			buildPhases = (
 				837C30F32BE06FB500F875A4 /* Sources */,
+				247FE4CC2BE5840D00FD8CE0 /* ShellScript */,
 				837C30F42BE06FB500F875A4 /* Frameworks */,
 				837C30F52BE06FB500F875A4 /* Resources */,
-				247FE4CC2BE5840D00FD8CE0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,6 +207,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		247FE4CB2BE583AF00FD8CE0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -230,7 +225,8 @@
 		};
 		247FE4CC2BE5840D00FD8CE0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -241,7 +237,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
@@ -253,10 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				837C30FD2BE06FB500F875A4 /* ContentView.swift in Sources */,
-				832E98BD2BFAC331006117B7 /* TropeButtonView.swift in Sources */,
 				838C98C22BF6D581007EF5D5 /* InfoSheetView.swift in Sources */,
-				837C31092BE0712700F875A4 /* Blueprint.swift in Sources */,
-				837C310B2BE18DCF00F875A4 /* ViewModel.swift in Sources */,
+				837C310B2BE18DCF00F875A4 /* BingoViewModel.swift in Sources */,
 				837C30FB2BE06FB500F875A4 /* ColumboBingoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
