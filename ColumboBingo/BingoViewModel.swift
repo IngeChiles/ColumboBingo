@@ -18,7 +18,12 @@ class BingoViewModel: ObservableObject {
         "columbo-dog-staring",
         "columbo-dog-vet",
         "columbo-dog-workmen",
-        "dog-licking-columbo"
+        "dog-licking-columbo",
+        "milena-magnifying-glass",
+        "milena-gets-a-cheesecake",
+        "milena-berries",
+        "milena-pose",
+        "milena-scoob"
     ]
 
     // Array of quotes for generating random alert message:

@@ -14,6 +14,8 @@
 		837C310B2BE18DCF00F875A4 /* BingoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C310A2BE18DCF00F875A4 /* BingoViewModel.swift */; };
 		838C98C22BF6D581007EF5D5 /* InfoSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C98C12BF6D581007EF5D5 /* InfoSheetView.swift */; };
 		83C2034D2BE43BAE00A0C99C /* ColumboBingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2034C2BE43BAE00A0C99C /* ColumboBingoTests.swift */; };
+		83F4D4F52C4C535B00462B1A /* Futura.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 83F4D4F42C4C535B00462B1A /* Futura.ttc */; };
+		83F4D4F62C4C535B00462B1A /* Futura.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 83F4D4F42C4C535B00462B1A /* Futura.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		83C203452BE2F4FB00A0C99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83C2034A2BE43BAD00A0C99C /* ColumboBingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColumboBingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C2034C2BE43BAE00A0C99C /* ColumboBingoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumboBingoTests.swift; sourceTree = "<group>"; };
+		83F4D4F42C4C535B00462B1A /* Futura.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futura.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 				838C98C12BF6D581007EF5D5 /* InfoSheetView.swift */,
 				837C310A2BE18DCF00F875A4 /* BingoViewModel.swift */,
 				837C30FE2BE06FBD00F875A4 /* Assets.xcassets */,
+				83F4D4F42C4C535B00462B1A /* Futura.ttc */,
 				837C31002BE06FBD00F875A4 /* Preview Content */,
 			);
 			path = ColumboBingo;
@@ -190,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F4D4F52C4C535B00462B1A /* Futura.ttc in Resources */,
 				837C31022BE06FBD00F875A4 /* Preview Assets.xcassets in Resources */,
 				837C30FF2BE06FBD00F875A4 /* Assets.xcassets in Resources */,
 			);
@@ -199,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F4D4F62C4C535B00462B1A /* Futura.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

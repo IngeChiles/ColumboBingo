@@ -9,7 +9,6 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:ColumboBingo.xcodeproj",
       "identifier" : "837C30F62BE06FB500F875A4",

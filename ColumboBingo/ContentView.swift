@@ -14,15 +14,10 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
                 VStack {
-                    Spacer()
                     Image(bvm.currentColumboPhoto)
                         .resizable()
                         .scaledToFit()
                         .cornerRadius(10)
-                        .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.blue, lineWidth: 5)
-                            )
                         .padding()
 
                     LazyVGrid(columns: columns, content: {
@@ -39,7 +34,7 @@ struct ContentView: View {
                         action: bvm.resetBoard)
                     )
                 })
-                .navigationTitle("Columbo Bingo")
+                .navigationTitle("Columbingo!")
                 .preferredColorScheme(.light)
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
@@ -48,22 +43,14 @@ struct ContentView: View {
                         } label: {
                             Image(systemName: "info.circle")
                                 .font(.title2)
+                                .foregroundStyle(.columboYellow)
                         }
                     }
                 }
                 .sheet(isPresented: $showingInfoSheet) {
                     InfoSheetView()
                 }
-            .background(
-                LinearGradient(
-                    gradient: Gradient(colors: [
-                        Color("ColumboYellow"),
-                        Color("BackgroundCream")
-                    ]),
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-            )
+                .background(Color.oliveYou.edgesIgnoringSafeArea(.all))
         }
     }
     private func tropeButton(index: Int) -> some View {
@@ -72,14 +59,13 @@ struct ContentView: View {
         }, label: {
             RoundedRectangle(cornerRadius: 10)
                 .aspectRatio(contentMode: .fill)
-                .foregroundStyle(bvm.tappedIndices.contains(index) ? .yellow : .white)
+                .foregroundStyle(bvm.tappedIndices.contains(index) ? .groovyGreen : .white)
                 .overlay(
                     Text(bvm.tropes[index])
                         .minimumScaleFactor(0.5)
                         .padding(10)
                 )
         })
-
     }
 }
 

@@ -6,6 +6,12 @@ import SwiftUI
 
 @main
 struct ColumboBingoApp: App {
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .font: UIFont(name: "futura-bold", size: 37)!,
+            .foregroundColor: UIColor.columboYellow
+        ]
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -11,7 +11,8 @@ struct InfoSheetView: View {
             Hi! My name is Inge. I'm an iOS developer who \
             also happens to love everyone's favorite 70s TV \
             detective. I made this app as a gift for my \
-            friend Milena, who loves him, too. Milena and \
+            friend Milena, who loves him, too. \
+            Milena and \
             Columbo actually have a few things in common: \
             they're both Italian, they make me laugh til \
             my sides hurt, and they make the world a \
@@ -30,42 +31,43 @@ struct InfoSheetView: View {
             """
 
     var body: some View {
-        VStack {
-            Spacer()
+        ScrollView {
+            VStack {
+                Spacer()
 
-            HStack {
-                Text("Info")
+                HStack {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.backward.circle")
+                            .foregroundStyle(.oliveYou)
+                    }
+                    Text("About")
+                }
+                .font(.largeTitle)
+
+                Spacer()
+
+                Text(helloMessage)
+                    .font(.title2)
+
+                Spacer()
+
+                Image("giving-milena-her-cake")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+
+                Text(disclaimer)
+                    .font(.callout)
+
+                Spacer()
+
             }
-            .font(.largeTitle)
-
-            Spacer()
-
-            Text(helloMessage)
-                .font(.title2)
-
-            Spacer()
-
-            Text(disclaimer)
-                .font(.callout)
-
-            Spacer()
-
-            Button("Back") {
-                dismiss()
-            }
+            .padding(20)
+            .multilineTextAlignment(.center)
         }
-        .padding(20)
-        .multilineTextAlignment(.center)
-        .background(
-            LinearGradient(
-                gradient: Gradient(colors: [
-                    Color("ColumboYellow"),
-                    Color("BackgroundCream")
-                ]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-        )
+        .background(Color.backgroundCream)
     }
 }
 
